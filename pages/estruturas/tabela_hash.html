@@ -1,0 +1,28 @@
+<p>&nbsp;Uma Tabela Hash, também conhecida como Mapa Hash, é uma estrutura de dados utilizada para armazenar e organizar dados de maneira eficiente, permitindo a rápida busca, inserção e exclusão de elementos. A Tabela Hash é baseada no conceito de função de hash, que transforma chaves em índices de armazenamento na tabela. Essa estrutura é particularmente útil quando você deseja associar chaves a valores, permitindo uma busca quase instantânea pelos valores correspondentes às chaves.</p>
+
+<br>
+<p><strong>&nbsp;Funcionamento da Tabela Hash:</strong></p>
+<p><strong>&nbsp;Função de Hash:</strong> Uma função de hash é usada para mapear chaves para índices na tabela. Idealmente, essa função distribui as chaves uniformemente por toda a tabela, minimizando colisões (quando duas chaves têm o mesmo índice).</p>
+<p><strong>&nbsp;Armazenamento:</strong> Os valores são armazenados nos índices calculados pela função de hash. Cada índice corresponde a um "bucket" (compartimento) onde os valores associados a chaves semelhantes são armazenados.</p>
+<p><strong>&nbsp;Resolução de Colisões:</strong> Colisões ocorrem quando duas chaves resultam no mesmo índice. Existem várias estratégias para lidar com colisões:</p>
+<p><strong>&nbsp;Encadeamento Separado:</strong> Cada índice contém uma lista encadeada de elementos com chaves que mapeiam para esse índice.</p>
+<p><strong>&nbsp;Endereçamento Aberto:</strong> Quando ocorre uma colisão, o algoritmo procura o próximo índice vago e insere o valor lá.</p>
+<p><strong>&nbsp;Hashing Duplo:</strong> Calcula um segundo valor de hash para encontrar um novo índice em caso de colisão.</p>
+
+<br>
+<p><strong>&nbsp;Vantagens da Tabela Hash:</strong></p>
+<p><strong>&nbsp;Busca Eficiente:</strong> A busca em uma tabela hash é geralmente muito rápida, pois a função de hash direciona diretamente para o índice onde o valor associado à chave está armazenado.</p>
+<p><strong>&nbsp;Inserção e Remoção Rápidas:</strong> A inserção e a remoção também são geralmente rápidas, desde que a função de hash seja bem escolhida e as colisões sejam tratadas eficientemente.</p>
+<p><strong>&nbsp;Estrutura Flexível:</strong> Tabelas hash são adequadas para armazenar grandes quantidades de dados e são usadas em muitos contextos, como bancos de dados, caches e algoritmos de busca.</p>
+
+<br>
+<p><strong>&nbsp;Desvantagens da Tabela Hash:</strong></p>
+<p><strong>&nbsp;Colisões:</strong> As colisões podem ocorrer quando várias chaves produzem o mesmo índice. Isso pode prejudicar o desempenho, especialmente se as colisões forem frequentes.</p>
+<p><strong>&nbsp;Uso de Memória:</strong> Dependendo da estratégia de resolução de colisões, as tabelas hash podem exigir mais memória do que outras estruturas de dados.</p>
+
+<br>
+<p><strong>&nbsp;Exemplo:</strong></p>
+<p>&nbsp;Vamos considerar uma tabela hash onde estamos armazenando números inteiros. A função de hash poderia ser o próprio número inteiro dividido pelo tamanho da tabela. Se tentássemos inserir o número 42, ele seria mapeado para o índice 42 % tamanho_da_tabela. Se depois tentássemos buscar o valor associado à chave 42, poderíamos acessar diretamente o índice 42 na tabela hash.</p>
+
+<br>
+<p>&nbsp;Em resumo, as tabelas hash são poderosas estruturas de dados para armazenar e recuperar informações rapidamente usando chaves. No entanto, a escolha da função de hash e a resolução eficaz de colisões são fatores críticos para garantir um bom desempenho e eficiência da estrutura.</p>

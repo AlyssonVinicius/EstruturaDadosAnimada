@@ -1,0 +1,31 @@
+<p>&nbsp;O Selection Sort (ou ordenação por seleção) é um algoritmo de ordenação simples, mas ineficiente para listas grandes, que segue uma abordagem de seleção iterativa para ordenar elementos em uma lista. Ele divide a lista em duas partes: uma parte ordenada e outra não ordenada. A cada iteração, encontra o elemento mínimo (ou máximo, dependendo da ordem desejada) da parte não ordenada e o move para a parte ordenada. Esse processo é repetido até que todos os elementos estejam na parte ordenada.</p>
+
+<br>
+<p><strong>&nbsp;Passos do Selection Sort:</strong></p>
+<p><strong>&nbsp;Identificação do Elemento Mínimo:</strong> Na primeira iteração, encontre o elemento mínimo (ou máximo) na lista não ordenada.</p>
+Troca: Troque o elemento mínimo encontrado com o primeiro elemento da parte não ordenada, colocando-o na primeira posição da parte ordenada.
+<p><strong>&nbsp;Avanço do Limite:</strong> Agora, considere a parte não ordenada como reduzida em um elemento (o elemento mínimo encontrado e movido para a parte ordenada). Repita os passos 1 e 2 para encontrar o próximo elemento mínimo e trocá-lo com o primeiro elemento da parte não ordenada.</p>
+<p><strong>&nbsp;Continuação:</strong> Continue repetindo esse processo até que todos os elementos estejam na parte ordenada. A cada iteração, a parte ordenada aumenta e a parte não ordenada diminui.</p>
+
+<br>
+<p><strong>&nbsp;Vantagens do Selection Sort:</strong></p>
+<p><strong>&nbsp;Simplicidade:</strong> O Selection Sort é fácil de entender e implementar, pois envolve apenas a identificação do mínimo/máximo em cada iteração.</p>
+<p><strong>&nbsp;Uso de Memória Constante:</strong> O Selection Sort é um algoritmo "in-place", o que significa que ele não requer espaço de memória adicional para realizar a ordenação.</p>
+
+<br>
+<p><strong>&nbsp;Desvantagens do Selection Sort:</strong></p>
+<p><strong>&nbsp;Desempenho:</strong> O Selection Sort tem um desempenho pobre, especialmente para listas grandes, devido à sua complexidade de tempo quadrático (O(n^2)) em todos os casos.</p>
+<p><strong>&nbsp;Falta de Adaptação:</strong> Independentemente da distribuição inicial dos elementos, o Selection Sort sempre executa o mesmo número de comparações e trocas.</p>
+
+<br>
+<p><strong>&nbsp;Ilustração:</strong></p>
+<p>&nbsp;Considere a lista não ordenada [5, 2, 9, 1, 5, 6]:</p>
+<p>&nbsp;Encontra o mínimo (1) e troca-o com o primeiro elemento (5).</p>
+    <p>&nbsp;1- Agora a lista não ordenada é [5, 2, 9, 5, 6], e o mínimo (2) é trocado com o segundo elemento (2).</p>
+        <p>&nbsp;2- A lista não ordenada se torna [5, 9, 5, 6], e o mínimo (5) é trocado com o terceiro elemento (9).</p>
+            <p>&nbsp;3- A lista não ordenada se torna [9, 5, 6], e o mínimo (5) é trocado com o segundo elemento (5).</p>
+                <p>&nbsp;4- A lista não ordenada se torna [9, 6], e o mínimo (6) é trocado com o segundo elemento (9).</p>
+                    <p>&nbsp;5- A lista agora está ordenada.</p>
+
+<br>
+<p>&nbsp;Em resumo, o Selection Sort é um algoritmo de ordenação simples, mas ineficiente para listas grandes devido à sua complexidade de tempo quadrático. É mais adequado para fins educacionais ou em situações em que a simplicidade é mais importante do que o desempenho.</p>

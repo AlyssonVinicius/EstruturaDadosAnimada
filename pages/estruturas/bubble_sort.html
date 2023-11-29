@@ -1,0 +1,30 @@
+<p> &nbsp; O Bubble Sort (ou ordenação de bolha) é um algoritmo de ordenação simples que funciona comparando e trocando repetidamente elementos adjacentes em uma lista até que a lista esteja totalmente ordenada. Embora seja fácil de entender e implementar, o Bubble Sort não é muito eficiente em termos de desempenho, especialmente para listas grandes, devido à sua complexidade de tempo quadrático (O(n^2)) no pior caso. </p>
+
+<p> &nbsp; Aqui está uma explicação da estrutura de dados Bubble Sort: </p>
+
+<br>
+
+<p> <strong> Passos do Bubble Sort: </strong> </p>
+&nbsp; 1- Comece comparando o primeiro elemento com o segundo elemento.<br>
+&nbsp; 2- Se o primeiro elemento for maior que o segundo, troque-os.<br>
+&nbsp; 3- Continue comparando e trocando os elementos adjacentes ao longo da lista.<br>
+&nbsp; 4- Repita os passos 1 a 3 para cada elemento da lista, percorrendo a lista várias vezes.<br>
+&nbsp; 5- Após uma passagem completa pela lista, o maior elemento estará na posição correta (no final, no caso da ordenação crescente).<br>
+&nbsp; 6- Repita as passagens restantes pela lista, exceto pelo último elemento (que já está no lugar correto).<br>
+&nbsp; 7- Continue esse processo até que não seja mais necessário realizar trocas, o que significa que a lista está ordenada.<br>
+
+<br>
+<p> <strong> Ilustração: </strong> </p>
+Considere a seguinte lista de números: [5, 2, 9, 1, 5, 6] <br>
+&nbsp;<strong> Primeira passagem: </strong> Comparação e troca de elementos adjacentes: <br>
+    &nbsp;&nbsp;&nbsp; [2, 5, 1, 5, 6, 9] <br>
+&nbsp;<strong>  Segunda passagem: </strong>Mais uma vez, o maior elemento (9) está no final: <br>
+    &nbsp;&nbsp;&nbsp; [2, 1, 5, 5, 6, 9] <br>
+&nbsp;<strong>  Terceira passagem: </strong>Agora, os últimos dois elementos estão no lugar correto: <br>
+    &nbsp;&nbsp;&nbsp; [1, 2, 5, 5, 6, 9] <br>
+A lista agora está ordenada. <br>
+
+<br>
+<p> <strong> Complexidade de Tempo: </strong> </p>
+<p> &nbsp; O Bubble Sort tem uma complexidade de tempo média e pior caso de O(n^2), o que o torna ineficiente para listas grandes. Isso ocorre porque ele compara e troca os elementos repetidamente, independentemente de quão ordenados eles já estão. Além disso, mesmo no melhor caso (quando a lista já está ordenada), o Bubble Sort ainda realiza várias comparações desnecessárias. </p>
+<p> &nbsp; Devido à sua baixa eficiência em comparação com algoritmos de ordenação mais avançados, o Bubble Sort é frequentemente usado apenas para fins educacionais ou em situações em que a simplicidade é mais importante do que o desempenho. </p>
