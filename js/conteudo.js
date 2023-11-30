@@ -80,10 +80,10 @@ function insertionSort() {
     conteudo.innerHTML = texto
 }
 
-function margeSort() {
-    const tituloEstrutura = '<h1>Marge Sort</h1>'
+function mergeSort() {
+    const tituloEstrutura = '<h1>Merge Sort</h1>'
     const videoEstrutura = '<iframe width="560" height="315" src="https://www.youtube.com/embed/PQUfS8tfJl0?si=bnma6BwbnRnMU1dr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
-    const texto = fetch('estruturas/marge_sort.html')
+    const texto = fetch('estruturas/merge_sort.html')
         .then(response => response.text())
         .then(data => {
         document.getElementById('conteudo').innerHTML = data;
